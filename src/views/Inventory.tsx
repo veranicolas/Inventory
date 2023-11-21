@@ -2,9 +2,9 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { DrawerScreenProps } from "@react-navigation/drawer";
 import { HAMBURGUER_ICON } from "../images";
 
-type HomeProps = DrawerScreenProps<any, 'Home'>
+type InventoryProps = DrawerScreenProps<any, 'Inventario'>
 
-const Home = ({navigation}:HomeProps) =>{
+const Inventory = ({navigation}:InventoryProps) =>{
 
     const handleOpenDrawer = () =>{
         navigation.openDrawer()
@@ -15,8 +15,8 @@ const Home = ({navigation}:HomeProps) =>{
             <Pressable style={{width:55, height:40}} onPress={handleOpenDrawer}>
                 <Image source={HAMBURGUER_ICON} style={{width:'auto', height:40}} resizeMode="contain"/>
             </Pressable>
-            <View style={style.current_stats}>
-                <Text style={{textAlign:'center'}}>Esta es la home</Text>
+            <View style={style.title}>
+                <Text style={{textAlign:'left', fontSize:40, color:'black'}}>Inventario</Text>
             </View>
         </View>
     )
@@ -33,11 +33,9 @@ const style = StyleSheet.create({
         backgroundColor: 'white', 
         gap: 25,
     },
-    current_stats: {
-        borderWidth: 1,
-        borderColor: 'lightgrey',
+    title: {
         width: '98%',
-        height: 300,
+        height: 60,
         alignSelf: 'center',
         display: 'flex',
         justifyContent: 'center',
@@ -45,4 +43,4 @@ const style = StyleSheet.create({
     }
 })
 
-export { Home }
+export { Inventory }

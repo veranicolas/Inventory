@@ -8,7 +8,7 @@ type LoginProps = StackScreenProps<any, 'Login'>;
 const Login = ({navigation}:LoginProps) => {
 
     const handleLogin = () =>{
-        navigation.navigate('Home')
+        navigation.navigate('Main')
     }
 
     return(
@@ -22,10 +22,21 @@ const Login = ({navigation}:LoginProps) => {
 }
 
 const style = StyleSheet.create({
-    container: { display: 'flex', justifyContent: 'center', flexDirection: 'column', flex: 1, paddingHorizontal: 15, backgroundColor:'white', gap:25},
-    inputs: {borderWidth:1, borderColor:'lightgrey', paddingHorizontal:10, borderRadius:6},
-    button: {width:'100%', backgroundColor:'#5AE4A7', paddingVertical:15, borderRadius:6},
-    buttonText: {fontSize:20, textAlign:'center', color:'black', fontWeight:'bold'},
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        flex: 1,
+        paddingHorizontal: 15,
+        backgroundColor: 'white',
+        gap: 25
+    },
+    inputs: {
+        borderWidth: 1,
+        borderColor: 'lightgrey',
+        paddingHorizontal: 10,
+        borderRadius: 6
+    }
 })
 
 export { Login }
