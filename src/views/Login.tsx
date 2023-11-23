@@ -1,7 +1,6 @@
 import { StackScreenProps } from "@react-navigation/stack";
-import { View, StyleSheet, Text, TextInput } from "react-native"
-
-import { CustomButton } from "../components/CustomButton";
+import { View, StyleSheet, Text } from "react-native"
+import { CustomButton, CustomInput } from "../components";
 
 type LoginProps = StackScreenProps<any, 'Login'>;
 
@@ -14,8 +13,8 @@ const Login = ({navigation}:LoginProps) => {
     return(
         <View style={style.container}>
             <Text style={{fontSize:50, color:'black'}}>Ingresa!</Text>
-            <TextInput placeholderTextColor={'grey'} style={style.inputs} placeholder="Ingrese su email"/>
-            <TextInput textContentType="password" secureTextEntry placeholderTextColor={'grey'} style={style.inputs} placeholder="Ingrese su clave"/>
+            <CustomInput placeholder="Ingrese su email"/>
+            <CustomInput placeholder="Ingrese su clave" secureTextEntry />
             <CustomButton title="login" onPress={handleLogin} />
         </View>
     )

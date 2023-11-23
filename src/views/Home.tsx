@@ -1,6 +1,7 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { DrawerScreenProps } from "@react-navigation/drawer";
-import { HAMBURGUER_ICON } from "../images";
+import { AVATAR, HAMBURGUER_ICON } from "../images";
+import { Header } from "../components/Header";
 
 type HomeProps = DrawerScreenProps<any, 'Home'>
 
@@ -12,9 +13,7 @@ const Home = ({navigation}:HomeProps) =>{
 
     return(
         <View style={style.container}>
-            <Pressable style={{width:55, height:40}} onPress={handleOpenDrawer}>
-                <Image source={HAMBURGUER_ICON} style={{width:'auto', height:40}} resizeMode="contain"/>
-            </Pressable>
+            <Header handleOpenDrawer={handleOpenDrawer}/>
             <View style={style.current_stats}>
                 <Text style={{textAlign:'center'}}>Esta es la home</Text>
             </View>

@@ -1,12 +1,12 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { DrawerContentScrollView, DrawerItem, DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer";
-import { Home, Login } from "../views";
-import { Inventory } from "../views/Inventory";
+import { AddItem, Home, Inventory, Login } from "../views";
 import { Image, Text, View } from "react-native";
 
 import { AVATAR } from "../images";
 
 const Stack = createStackNavigator()
+const InventoryNav = createStackNavigator()
 const Drawer = createDrawerNavigator()
 
 const HomeNavigator = () =>{
@@ -34,8 +34,17 @@ const HomeNavigator = () =>{
             )
           }}>
             <Drawer.Screen name="Home" component={Home} options={{headerShown:false}} />
-            <Drawer.Screen name="Inventario" component={Inventory} options={{headerShown:false}} />
+            <Drawer.Screen name="Inventario" component={InventoryNavigator} options={{headerShown:false}}/>
         </Drawer.Navigator>
+    )
+}
+
+const InventoryNavigator = () =>{
+    return(
+        <InventoryNav.Navigator initialRouteName="InventarioMain">
+            <InventoryNav.Screen name="InventarioMain" component={Inventory} options={{headerShown:false}}/>
+            <InventoryNav.Screen name="Cargar Item" component={AddItem} />
+        </InventoryNav.Navigator>
     )
 }
 

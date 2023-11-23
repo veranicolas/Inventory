@@ -1,4 +1,4 @@
-import { Home } from "./Home";
-import { Login } from "./Login";
-
-export { Home, Login}
+export * from './AddItem'
+export * from './Home'
+export * from './Inventory'
+export * from './Login'
