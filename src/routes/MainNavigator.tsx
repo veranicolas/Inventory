@@ -1,9 +1,9 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { DrawerContentScrollView, DrawerItem, DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer";
-import { AddItem, Home, Inventory, Login } from "../views";
-import { Image, Text, View } from "react-native";
+import { AddItem, Home, Inventory, Login } from "@/views";
 
-import { AVATAR } from "../images";
+import { Image, Text, View } from "react-native";
+import { AVATAR } from "@/images";
 
 const Stack = createStackNavigator()
 const InventoryNav = createStackNavigator()

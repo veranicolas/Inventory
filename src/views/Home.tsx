@@ -1,7 +1,6 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { DrawerScreenProps } from "@react-navigation/drawer";
-import { AVATAR, HAMBURGUER_ICON } from "../images";
-import { Header } from "../components/Header";
+import { Header } from "@/components";
 
 type HomeProps = DrawerScreenProps<any, 'Home'>
 

@@ -1,6 +1,6 @@
 import { StackScreenProps } from "@react-navigation/stack";
 import { View, StyleSheet, Text } from "react-native"
-import { CustomButton, CustomInput } from "../components";
+import { CustomButton, CustomInput } from "@/components";
 
 type LoginProps = StackScreenProps<any, 'Login'>;
 

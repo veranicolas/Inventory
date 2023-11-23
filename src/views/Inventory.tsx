@@ -1,7 +1,6 @@
 import { Pressable, SectionList, StyleSheet, Text, View } from "react-native";
 import { DrawerScreenProps } from "@react-navigation/drawer";
-import { CustomButton } from "../components/CustomButton";
-import { Header } from "../components/Header";
+import { CustomButton, Header } from '@/components'
 import { useState } from "react";
 
 type ItemProps = {

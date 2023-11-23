@@ -1,5 +1,5 @@
 import { Image, Pressable } from "react-native"
-import { AVATAR } from "../images"
+import { AVATAR } from "@/images"
 
 type HeaderProps = {
     handleOpenDrawer: ()=> any
