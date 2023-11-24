@@ -75,6 +75,10 @@ const Inventory = ({navigation}:InventoryProps) =>{
                 {name:'Fideos', quantity:6},
                 {name:'Harina', quantity:2},
                 {name:'Soja texturizada', quantity:1},
+                {name:'Arroz', quantity:4},
+                {name:'Fideos', quantity:6},
+                {name:'Harina', quantity:2},
+                {name:'Soja texturizada', quantity:1},
             ],
         },
         {

@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text } from "react-native"
 
 type ButtonProps = {
     title:string,
-    onPress:()=> any
+    onPress:(data?:any)=> any
 }
 
 export const CustomButton = ({title, onPress}:ButtonProps) =>{
