@@ -22,7 +22,10 @@ const AddItem = ({navigation}:AddItemProps) =>{
         },
     })
 
-    const onSubmit = (data:any) => { console.log(data) }
+    const onSubmit = (data:any) => { 
+        console.log(data)
+        navigation.navigate('InventarioMain')
+    }
 
     const handleFileSubmit = async () =>{
         const response = await launchCamera({

@@ -1,8 +1,13 @@
+import { makeAutoObservable } from "mobx"
 
 class UserDataStore {
 
-    constructor(){
+    name:string
 
+    constructor(){
+        this.name = 'Nicolas'
+
+        makeAutoObservable(this)
     }
 }
 
